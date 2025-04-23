@@ -4,4 +4,11 @@ version = "0.1.0"
 description = "An app to chat with Spinoza about his Ethics"
 readme = "README.md"
 requires-python = ">=3.12"
-dependencies = []
+dependencies = [
+    "pdfminer.six",  # For text-based PDF extraction
+    "neo4j",         # For Neo4J database connection
+    "langchain",     # Core LangChain functionality
+    "langchain-neo4j",      # Neo4J integration for LangChain
+    "tqdm",          # For progress bars
+    "python-dotenv", # For environment variable management
+]
